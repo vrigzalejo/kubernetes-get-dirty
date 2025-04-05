@@ -15,3 +15,4 @@ spec:
       containers:
         - name: auth
           image: vrigzalejo/kub-demo-auth:latest
+          
