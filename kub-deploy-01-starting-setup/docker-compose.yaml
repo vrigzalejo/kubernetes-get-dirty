@@ -13,3 +13,4 @@ services:
     environment:
       MONGODB_CONNECTION_URI: ${MONGODB_CONNECTION_URI}
       AUTH_API_ADDRESSS: 'auth:3000'
+      
