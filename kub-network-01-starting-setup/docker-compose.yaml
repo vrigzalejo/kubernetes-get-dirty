@@ -16,4 +16,4 @@ services:
     environment:
       TASKS_FOLDER: tasks
       AUTH_ADDRESS: auth
-    
+      
