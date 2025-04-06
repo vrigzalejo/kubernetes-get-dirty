@@ -28,8 +28,6 @@ spec:
       containers:
         - name: users-api
           image: vrigzalejo/kub-dep-users:latest
-          env:
-            - name: MONGODB_CONNECTION_URI
-              value: ''
-            - name: AUTH_API_ADDRESSS
-              value: 'auth-service.default:3000'
+          envFrom:
+          - configMapRef:
+              name: deploy-config

@@ -28,6 +28,6 @@ spec:
       containers:
         - name: auth-api
           image: vrigzalejo/kub-dep-auth:latest
-          env:
-            - name: TOKEN_KEY
-              value: ''
+          envFrom:
+          - configMapRef:
+              name: deploy-config
